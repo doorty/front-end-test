@@ -1,4 +1,4 @@
-front-end-test
+Post+Beam
 ==============
 
-Front end test for Post+Beam
+Front end test
