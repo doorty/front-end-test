@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, ../scss/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 41, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 10, ../scss/styles.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../scss/styles.scss */
+body {
+  font-family: "Gotham HTF", "Gotham", Arial, sans-serif;
+  font-size: 16px; }
+
+/* line 24, ../scss/styles.scss */
+a {
+  text-decoration: none; }
+
+/* line 28, ../scss/styles.scss */
+a:focus, button:focus {
+  outline: none; }
+
+@keyframes fade {
+  /* line 33, ../scss/styles.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 36, ../scss/styles.scss */
+  25% {
+    opacity: 1; }
+
+  /* line 39, ../scss/styles.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade {
+  /* line 45, ../scss/styles.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 48, ../scss/styles.scss */
+  25% {
+    opacity: 1; }
+
+  /* line 51, ../scss/styles.scss */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade {
+  /* line 57, ../scss/styles.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 60, ../scss/styles.scss */
+  25% {
+    opacity: 1; }
+
+  /* line 63, ../scss/styles.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes pulsate {
+  /* line 73, ../scss/styles.scss */
+  from {
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3);
+    box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3); }
+
+  /* line 77, ../scss/styles.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05); } }
+
+@-webkit-keyframes pulsate {
+  /* line 85, ../scss/styles.scss */
+  from {
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3);
+    box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3); }
+
+  /* line 89, ../scss/styles.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05); } }
+
+@-moz-keyframes pulsate {
+  /* line 96, ../scss/styles.scss */
+  from {
+    -moz-box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3);
+    box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.3); }
+
+  /* line 100, ../scss/styles.scss */
+  to {
+    -moz-box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.05); } }
+
+/* line 112, ../scss/styles.scss */
+body.home #content-wrapper {
+  margin: 0 auto;
+  width: 1024px;
+  min-height: 768px; }
+  /* line 117, ../scss/styles.scss */
+  body.home #content-wrapper header {
+    padding: 15px 33px 0 33px;
+    height: 383px;
+    color: white;
+    background-color: #195ca5;
+    background-image: url("../images/backgrounds/header.png");
+    background-repeat: repeat-x; }
+    /* line 131, ../scss/styles.scss */
+    body.home #content-wrapper header #header-content a {
+      color: white; }
+    /* line 135, ../scss/styles.scss */
+    body.home #content-wrapper header #header-content h1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 207px;
+      height: 71px;
+      text-indent: -99999px;
+      background-image: url("../images/sprite.png");
+      background-position: 0 0;
+      background-repeat: no-repeat; }
+    /* line 150, ../scss/styles.scss */
+    body.home #content-wrapper header #header-content #main-nav {
+      margin-top: 33px;
+      border-bottom: 1px solid white; }
+      /* line 154, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #main-nav ul li {
+        display: inline-block;
+        margin-bottom: 5px; }
+        /* line 157, ../scss/styles.scss */
+        body.home #content-wrapper header #header-content #main-nav ul li a {
+          font-size: 12px;
+          font-weight: bold;
+          padding: 6px 12px; }
+          /* line 161, ../scss/styles.scss */
+          body.home #content-wrapper header #header-content #main-nav ul li a.selected, body.home #content-wrapper header #header-content #main-nav ul li a:hover {
+            color: #195ca5;
+            background-color: white; }
+    /* line 170, ../scss/styles.scss */
+    body.home #content-wrapper header #header-content #alt-nav {
+      float: right;
+      text-align: right; }
+      /* line 174, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #alt-nav ul li {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid white; }
+        /* line 178, ../scss/styles.scss */
+        body.home #content-wrapper header #header-content #alt-nav ul li:last-child {
+          border-right: 0;
+          padding-right: 0; }
+        /* line 182, ../scss/styles.scss */
+        body.home #content-wrapper header #header-content #alt-nav ul li a {
+          font-size: 11px; }
+          /* line 184, ../scss/styles.scss */
+          body.home #content-wrapper header #header-content #alt-nav ul li a:hover {
+            text-decoration: underline; }
+    /* line 192, ../scss/styles.scss */
+    body.home #content-wrapper header #header-content #animation {
+      display: block;
+      width: 960px;
+      height: 257px;
+      overflow: hidden;
+      background-repeat: no-repeat; }
+      /* line 200, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #animation.experience {
+        background-image: url("../images/animation/experience.png"); }
+      /* line 203, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #animation.expertise {
+        background-image: url("../images/animation/expertise.png"); }
+      /* line 206, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #animation.focus {
+        background-image: url("../images/animation/focus.png"); }
+      /* line 209, ../scss/styles.scss */
+      body.home #content-wrapper header #header-content #animation.global-reach {
+        background-image: url("../images/animation/global_reach.png"); }
+  /* line 218, ../scss/styles.scss */
+  body.home #content-wrapper #news {
+    position: relative;
+    padding: 20px 30px;
+    height: 172px;
+    border-bottom: 1px solid #726746;
+    background-color: #c5b994;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5b994), color-stop(100%, #ab9f7f));
+    background-image: -webkit-linear-gradient(#c5b994, #ab9f7f);
+    background-image: -moz-linear-gradient(#c5b994, #ab9f7f);
+    background-image: -o-linear-gradient(#c5b994, #ab9f7f);
+    background-image: -ms-linear-gradient(#c5b994, #ab9f7f);
+    background-image: linear-gradient(#c5b994, #ab9f7f); }
+    /* line 226, ../scss/styles.scss */
+    body.home #content-wrapper #news #news-selector {
+      position: absolute;
+      top: -20px;
+      width: 50px;
+      height: 50px;
+      background-image: url("../images/sprite.png");
+      background-position: -262px -17px;
+      background-repeat: no-repeat; }
+    /* line 241, ../scss/styles.scss */
+    body.home #content-wrapper #news #news-content .whitepaper {
+      cursor: pointer;
+      position: relative;
+      opacity: 1;
+      float: left;
+      margin-right: 15px;
+      width: 304px;
+      height: 123px;
+      background-image: url("../images/sprite.png");
+      background-position: 0 -419px; }
+      /* line 253, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper figure {
+        float: left;
+        margin: 4px 15px 0 6px;
+        width: 90px;
+        height: 114px;
+        background-image: url("../images/sprite.png");
+        background-position: 0 -72px;
+        background-repeat: no-repeat; }
+      /* line 264, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper h3, body.home #content-wrapper #news #news-content .whitepaper h4 {
+        font-size: 14px; }
+      /* line 269, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper h4 {
+        text-indent: -9999px;
+        margin-top: 26px;
+        color: #fff;
+        width: 125px; }
+      /* line 275, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper h3 {
+        margin-top: 13px;
+        margin-right: 20px;
+        width: 255px;
+        text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.5); }
+      /* line 281, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper .read {
+        color: #195ca5;
+        font-size: 11px;
+        font-style: italic; }
+        /* line 287, ../scss/styles.scss */
+        body.home #content-wrapper #news #news-content .whitepaper .read:hover {
+          text-decoration: underline; }
+      /* line 292, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper.retirement figure {
+        background-position: 0 -72px; }
+      /* line 297, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper.wine figure {
+        background-position: -91px -72px; }
+      /* line 302, ../scss/styles.scss */
+      body.home #content-wrapper #news #news-content .whitepaper.sun figure {
+        background-position: -187px -72px; }
+  /* line 313, ../scss/styles.scss */
+  body.home #content-wrapper footer {
+    border-top: 1px solid #fff;
+    background-color: #e0e0e0;
+    min-height: 44px; }
+    /* line 317, ../scss/styles.scss */
+    body.home #content-wrapper footer p {
+      position: relative;
+      top: 18px;
+      left: 35px;
+      color: #707070;
+      font-family: Arial, sans-serif;
+      font-size: 10px; }
+  /* line 329, ../scss/styles.scss */
+  body.home #content-wrapper #abstracts {
+    position: relative; }
+    /* line 332, ../scss/styles.scss */
+    body.home #content-wrapper #abstracts #download-now {
+      position: absolute;
+      top: 220px;
+      left: 781px;
+      width: 150px;
+      height: 33px;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      border: 0;
+      color: #606060;
+      background: #f1ece6;
+      font-size: 12px;
+      font-weight: bold;
+      -webkit-border-radius: 4px 4px;
+      -moz-border-radius: 4px / 4px;
+      -ms-border-radius: 4px / 4px;
+      -o-border-radius: 4px / 4px;
+      border-radius: 4px / 4px;
+      text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.9);
+      -webkit-box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.5);
+      -moz-box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.5);
+      box-shadow: 0px 1px 2px 2px rgba(100, 100, 100, 0.5); }
+      /* line 351, ../scss/styles.scss */
+      body.home #content-wrapper #abstracts #download-now:hover {
+        color: #000; }
+    /* line 357, ../scss/styles.scss */
+    body.home #content-wrapper #abstracts .abstract {
+      height: inherit;
+      background-image: url("../images/backgrounds/abstract.png");
+      background-repeat: repeat-x; }
+      /* line 364, ../scss/styles.scss */
+      body.home #content-wrapper #abstracts .abstract .content {
+        position: relative;
+        top: 35px;
+        left: 103px;
+        width: 675px; }
+        /* line 370, ../scss/styles.scss */
+        body.home #content-wrapper #abstracts .abstract .content .figure-wrapper {
+          float: left;
+          clear: left;
+          margin-right: 20px;
+          background-color: #bcb5a1;
+          -webkit-box-shadow: inset 0 0 3px 3px rgba(100, 100, 100, 0.1);
+          -moz-box-shadow: inset 0 0 3px 3px rgba(100, 100, 100, 0.1);
+          box-shadow: inset 0 0 3px 3px rgba(100, 100, 100, 0.1); }
+          /* line 377, ../scss/styles.scss */
+          body.home #content-wrapper #abstracts .abstract .content .figure-wrapper figure {
+            margin: 5px;
+            width: 209px;
+            height: 228px;
+            background-image: url("../images/sprite.png");
+            background-position: 0 -189px;
+            background-repeat: no-repeat; }
+        /* line 389, ../scss/styles.scss */
+        body.home #content-wrapper #abstracts .abstract .content .title {
+          width: 450px;
+          font-size: 20px;
+          font-weight: bold;
+          text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.5); }
+        /* line 398, ../scss/styles.scss */
+        body.home #content-wrapper #abstracts .abstract .content .subtitle {
+          margin-top: 15px;
+          font-size: 15px; }
+        /* line 405, ../scss/styles.scss */
+        body.home #content-wrapper #abstracts .abstract .content .date {
+          margin-top: 5px;
+          color: #666;
+          font-size: 12px; }
+        /* line 413, ../scss/styles.scss */
+        body.home #content-wrapper #abstracts .abstract .content .details {
+          margin-top: 15px;
+          font-size: 14px; }
+          /* line 416, ../scss/styles.scss */
+          body.home #content-wrapper #abstracts .abstract .content .details p {
+            margin-top: 5px; }
+          /* line 419, ../scss/styles.scss */
+          body.home #content-wrapper #abstracts .abstract .content .details em {
+            font-weight: bold; }
+          /* line 422, ../scss/styles.scss */
+          body.home #content-wrapper #abstracts .abstract .content .details ul {
+            margin-top: 15px;
+            font-size: 13px; }
+            /* line 425, ../scss/styles.scss */
+            body.home #content-wrapper #abstracts .abstract .content .details ul li {
+              margin-top: 5px;
+              position: relative;
+              left: 20px; }
+              /* line 429, ../scss/styles.scss */
+              body.home #content-wrapper #abstracts .abstract .content .details ul li:before {
+                content: '\00BB';
+                position: relative;
+                left: -10px; }
+/* line 447, ../scss/styles.scss */
+body.home #animation {
+  -webkit-animation-name: fade;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: fade;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+/* line 478, ../scss/styles.scss */
+body.home #news-selector {
+  opacity: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.5s ease-in-out 0;
+  -ms-transition: all 0.5s ease-in-out 0;
+  -o-transition: all 0.5s ease-in-out 0;
+  transition: all 0.5s ease-in-out 0; }
+/* line 484, ../scss/styles.scss */
+body.home #abstracts {
+  display: none;
+  height: 0;
+  -webkit-transition: height 1s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: height 1s ease-in-out 0;
+  -ms-transition: height 1s ease-in-out 0;
+  -o-transition: height 1s ease-in-out 0;
+  transition: height 1s ease-in-out 0; }
+/* line 490, ../scss/styles.scss */
+body.home #download-now:hover {
+  -webkit-animation-name: pulsate;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: pulsate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  animation-name: pulsate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+/* line 522, ../scss/styles.scss */
+body.home.news #abstracts {
+  display: block;
+  height: 418px; }
+/* line 527, ../scss/styles.scss */
+body.home.news #news-selector {
+  opacity: 1; }
+/* line 533, ../scss/styles.scss */
+body.home.news.retirement #news-selector {
+  left: 40px; }
+/* line 537, ../scss/styles.scss */
+body.home.news.retirement #content-wrapper #news #news-content #retirement {
+  opacity: .5; }
+/* line 541, ../scss/styles.scss */
+body.home.news.retirement #abstract-retirement {
+  display: block; }
+/* line 545, ../scss/styles.scss */
+body.home.news.retirement #abstract-wine, body.home.news.retirement #abstract-sun {
+  display: none; }
+/* line 553, ../scss/styles.scss */
+body.home.news.wine #news-selector {
+  left: 365px; }
+/* line 557, ../scss/styles.scss */
+body.home.news.wine #content-wrapper #news #news-content #wine {
+  opacity: .5; }
+/* line 561, ../scss/styles.scss */
+body.home.news.wine #abstract-retirement {
+  display: block; }
+/* line 565, ../scss/styles.scss */
+body.home.news.wine #abstract-wine, body.home.news.wine #abstract-sun {
+  display: none; }
+/* line 572, ../scss/styles.scss */
+body.home.news.sun #news-selector {
+  left: 685px; }
+/* line 576, ../scss/styles.scss */
+body.home.news.sun #content-wrapper #news #news-content #sun {
+  opacity: .5; }
+/* line 580, ../scss/styles.scss */
+body.home.news.sun #abstract-retirement {
+  display: block; }
+/* line 584, ../scss/styles.scss */
+body.home.news.sun #abstract-wine, body.home.news.sun #abstract-sun {
+  display: none; }
